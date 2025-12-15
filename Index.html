@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<!-- Khai báo tài liệu HTML5 -->
+
+<html lang="vi">
+<!-- Thẻ gốc của trang web, lang="vi" cho biết ngôn ngữ là tiếng Việt -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- UTF-8 giúp hiển thị đúng tiếng Việt -->
+
+    <title>Trang Chủ</title>
+    <!-- Tên hiển thị trên tab trình duyệt -->
+
+    <style>
+        /* CSS dùng để trang trí giao diện */
+
+        body {
+            font-family: Arial, sans-serif; 
+            /* Chọn font chữ */
+
+            height: 100vh; 
+            /* Chiều cao toàn màn hình */
+
+            display: flex; 
+            /* Dùng Flexbox để căn giữa */
+
+            justify-content: center; 
+            /* Căn giữa theo chiều ngang */
+
+            align-items: center; 
+            /* Căn giữa theo chiều dọc */
+
+            background: linear-gradient(#e0f4ff, #ffffff);
+            /* Tạo nền chuyển màu */
+        }
+
+        .box {
+            text-align: center; 
+            /* Căn chữ ra giữa */
+
+            background: white; 
+            /* Màu nền khung */
+
+            padding: 40px; 
+            /* Khoảng cách bên trong khung */
+
+            border-radius: 15px; 
+            /* Bo góc khung */
+
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            /* Đổ bóng tạo chiều sâu */
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            /* Tạo khoảng cách dưới tiêu đề */
+
+            color: #003c5a;
+            /* Màu chữ */
+        }
+
+        a {
+            display: inline-block; 
+            /* Biến thẻ a thành dạng nút */
+
+            margin: 15px; 
+            /* Khoảng cách giữa các nút */
+
+            padding: 15px 30px; 
+            /* Kích thước nút */
+
+            background: #0077b6; 
+            /* Màu nền nút */
+
+            color: white; 
+            /* Màu chữ */
+
+            text-decoration: none; 
+            /* Bỏ gạch chân */
+
+            border-radius: 30px; 
+            /* Bo tròn nút */
+
+            font-size: 16px;
+
+            transition: 0.3s;
+            /* Hiệu ứng chuyển động mượt */
+        }
+
+        a:hover {
+            background: #023e8a;
+            /* Đổi màu khi rê chuột */
+
+            transform: scale(1.05);
+            /* Phóng to nhẹ khi rê chuột */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Phần hiển thị nội dung trang -->
+
+    <div class="box">
+        <!-- Khung chứa nội dung -->
+
+        <h1>Chọn điểm đến</h1>
+        <!-- Tiêu đề chính -->
+
+        <a href="Mã gốc.html"> Du lịch Đà Nẵng</a>
+        <!-- Nút bấm dẫn sang trang danang.html -->
+
+        <a href="Đồ Ăn tại Đà Nẵng.html"> Ẩm Thực Đà Nẵng</a>
+        <!-- Nút bấm dẫn sang trang hanoi.html -->
+    </div>
+
+</body>
+</html>

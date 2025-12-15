@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Du lịch Đà Nẵng</title>
+
+    <!-- Font cao cấp -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(180deg, #e8f4ff, #ffffff);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* ===== HEADER HERO ===== */
+        h1 {
+            height: 60vh;
+            margin: 0;
+            background:
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url("0daf06cf-4ee1-4274-bfe4-c2b67dbb3345.jpg") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            letter-spacing: 3px;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        /* ===== MENU ===== */
+        .sub-menu {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(12px);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .sub-menu a {
+            text-decoration: none;
+            color: #0066b8;
+            font-weight: 500;
+            padding: 10px 22px;
+            border-radius: 30px;
+            transition: all 0.35s ease;
+        }
+
+        .sub-menu a:hover {
+            background: linear-gradient(135deg, #0077cc, #00b4d8);
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,119,204,0.4);
+            transform: translateY(-2px);
+        }
+
+        /* ===== CONTENT ===== */
+        .content {
+            max-width: 1100px;
+            background: white;
+            margin: 80px auto;
+            padding: 50px;
+            border-radius: 35px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+            animation: slideUp 1.2s ease;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #004a86;
+            font-size: 32px;
+            border-left: 6px solid #0077cc;
+            padding-left: 14px;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            color: #005fb8;
+            font-size: 26px;
+            margin-top: 45px;
+            position: relative;
+        }
+
+        h3::before {
+            content: "";
+            position: absolute;
+            left: -16px;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            background: #0077cc;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+            margin-top: 14px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 30px auto;
+            border-radius: 22px;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.45);
+        }
+
+        /* ===== ANIMATION ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            h1 { font-size: 38px; padding: 0 20px; }
+            .content { padding: 30px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Du Lịch Đà Nẵng</h1>
+
+<div class="sub-menu">
+    <a href="#mykhe">Mỹ Khê</a>
+    <a href="#sontra">Sơn Trà</a>
+    <a href="#caurong">Cầu Rồng</a>
+    <a href="#tinhyeu">Cầu Tình Yêu</a>
+    <a href="#nguhanhson">Ngũ Hành Sơn</a>
+</div>
+
+<div class="content">
+
+    <img src="0daf06cf-4ee1-4274-bfe4-c2b67dbb3345.jpg" alt="Ảnh toàn cảnh Đà Nẵng">
+    <p>Ảnh toàn cảnh Đà Nẵng trên cao.</p>
+
+    <h2>Các địa điểm du lịch nổi tiếng của Đà Nẵng</h2>
+
+    <h3 id="mykhe">1. Bãi Biển Mỹ Khê</h3>
+    <p>Bãi biển Mỹ Khê được mệnh danh là một trong những bãi biển quyến rũ nhất hành tinh nhờ bờ cát trắng mịn, biển xanh và sóng êm dịu. Đây là địa điểm lý tưởng để tắm biển, ngắm bình minh và tham gia các hoạt động thể thao nước. Không chỉ hấp dẫn khách du lịch bơi làn nước trong xanh, bãi cát êm đềm hay những bóng dừa rợp mát, Mỹ Khê còn được đánh giá là bãi biển sạch nhất Việt Nam. Vẻ đẹp mê hoặc của biển Mỹ Khê và sự thân thiện, mến khách của con người Đà Nẵng đã giúp cho địa điểm này ghi được nhiều điểm cộng lớn và trở nên vô vùng ấn tượng trong mắt khách du lịch.</p>
+    <img src="biển Mỹ Khê.jpg">
+    <p>Du khách có thể đến biển Mỹ Khê để du lịch vào nhiều thời điểm trong năm, tuy nhiên khoảng thời gian tháng 4 tới tháng 9 dương lịch, vẫn là khoảng thời gian đẹp nhất. lúc này nắng nhẹ nhàng và chan hòa, biển lại dịu êm, vô cùng thích hợp để nghỉ dưỡng hoặc tham gia các hoạt động ở ngoài trời. Với hệ thống dịch vụ phát triển, Mỹ Khê luôn là điểm dừng chân không thể bỏ lỡ khi đến Đà Nẵng.</p>
+
+    <h3 id="sontra">2. Bán Đảo Sơn Trà</h3>
+    <p>Bán Đảo Sơn Trà có biệt danh " Nàng Tiên Xanh" nơi đây rộng đến 3.439 hecta- sở hữu khí hậu quanh năm mát mẻ và hệ sinh thái, động thực vật đa dạng bậc nhất Đà nẵng. Bán đảo Sơn Trà được ví như "lá phổi xanh" của Đà Nẵng với hệ sinh thái rừng nguyên sinh phong phú. Nơi đây có chùa Linh Ứng, tượng Phật Bà Quan Âm cao nhất Việt Nam và đỉnh Bàn Cờ với tầm nhìn bao quát toàn thành phố. Bán đảo Sơn Trà Đà Nẵng là kho báu của thiên nhiên và lịch sử, với những điểm đến không chỉ đẹp về cảnh quan mà còn giàu về giá trị văn hóa. Thiên nhiên nơi đây nổi tiêng hoang sơ và thơ mộng, từ đỉnh Bàn Cờ, Bãi Đá Đen, Mũi Nghê, Bãi Tiên Sa, Bãi Bụt cho đến cây Đa Ngàn Năm Tuổi. Đây đều là những địa điểm xuất sắc ngoài mong đợi, đáng cân nhắc.</p>
+    <img src="Chùa Linh Ứng.jpg">
+    <p>Du khách có thể khám phá thiên nhiên, ngắm voọc chà vá chân nâu - loài linh trưởng quý hiếm, hoặc trải nghiệm cung đường ven biển tuyệt đẹp.</p>
+    <img src="vooc-cha-va.jpg">
+
+    <h3 id="caurong">3. Cầu Rồng</h3>
+    <p>Cầu Rồng là biểu tượng kiến trúc hiện đại của Đà Nẵng với hình dáng con rồng vươn ra biển Đông. Vào tối thứ 7 và chủ nhật, cầu có trình diễn phun lửa - phun nước thu hút đông đảo du khách.</p>
+    <img src="at_cau-rong_701fbad1b36c717d324c6bd06ffffe9e.jpg">
+    <p>Khi lên đèn, cây cầu trở nên rực rỡ và tạo nên khung cảnh lung linh bên sông Hàn.</p>
+
+    <h3 id="tinhyeu">4. Cầu Tình Yêu và Tượng Cá Chép Hóa Rồng</h3>
+    <p>Cầu Tình Yêu là những cây cầu được xây dựng như biểu tượng của tình yêu và hạnh phúc lứa đôi, thường là cầu đi bộ với kiến trúc đẹp mắt, không gian lãng mạn. Trên cầu thường trang trí bằng đèn, hoa, các biểu tượng trái tim hoặc ổ khóa tình yêu, nơi các cặp đôi đến để ghi dấu kỷ niệm, chụp ảnh, hoặc thể hiện lời hứa gắn bó bền lâu. Cầu Tình Yêu không chỉ mang ý nghĩa văn hóa và phong thủy mà còn trở thành điểm đến du lịch hấp dẫn. Một số cầu nổi tiếng trên thế giới bao gồm Cầu Tình Yêu Đà Nẵng ở Việt Nam, Pont des Arts ở Paris (Pháp) và Cầu Namsan ở Seoul (Hàn Quốc).</p>
+    <img src="cầu tình yêu.jpg">
+
+    <h3 id="nguhanhson">5. Ngũ Hành Sơn</h3>
+    <p>Quần thể Ngũ Hành Sơn gồm 5 ngọn núi đá vôi mang tên Kim - Mộc - Thủy - Hỏa - Thổ. Mỗi ngọn núi mang trong mình một vẻ đẹp riêng, kết hợp hài hòa giữa thiên nhiên hùng vĩ và chiều sâu tâm linh. Những vách đá sừng sững, hang dộng kỳ vĩ, đền chùa rêu phong cổ kính,... tạo nên khung cảnh vừa linh thiêng vừa lãng mạn, khiến du khách không khỏi trầm trồ. Nơi đây nổi tiếng với các hang động kỳ ảo, chùa chiền linh thiêng và làng đá mỹ nghệ Non Nước. Du khách có thể leo lên đỉnh Thủy Sơn để ngắm toàn cảnh biển Đà Nẵng.</p>
+    <img src="ngũ hành sơn.jpg">
+    <p>Nhờ địa thế cao ráo và thảm thực vật đa tầng, thời tiết tại đây luôn dịu mát, lí tưởng để tản bộ ngắm cảnh hoặc tìm về những khoảnh khắc lắng đọng. Đừng quên dừng chân tại làng Điêu Khắc Đá Non Nước - làng nghề hơn 400 năm tuổi, nơi lưu giữ tinh hoa chạm trổ đá mỹ nghệ, góp phần làm nên dấu ấn riêng cho văn hóa Đà Nẵng.</p>
+    <img src="nonuoc.jpg">
+
+</div>
+
+</body>
+</html>
